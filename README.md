@@ -12,6 +12,18 @@ Only public material belongs here. Anything private goes in atqamz/blob-private.
 
 The owner is a user or an org. For example, `atqamz/hand/766/board-start.png`.
 
+## Commit identity
+
+Never commit here as a personal account. Run this in every clone before its first commit:
+
+```sh
+git config user.name blob
+git config user.email blob@atqamz.invalid
+git config commit.gpgsign false
+```
+
+The `.invalid` domain is reserved, so no GitHub account can ever claim these commits. They stay unsigned on purpose.
+
 ## Add media
 
 ```sh
